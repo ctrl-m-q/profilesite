@@ -1,13 +1,147 @@
+
+@font-face {
+  font-family: "CormorantGaramond-Medium";
+  font-style: normal;
+  font-weight: normal;
+  src: url("./assets/fonts/CormorantGaramond-Medium.ttf");
+}
+
+@font-face {
+  font-family: "CormorantGaramond-Regular";
+  font-style: normal;
+  font-weight: normal;
+  src: url("./assets/fonts/CormorantGaramond-Regular.ttf");
+}
+
+@font-face {
+  font-family: "CormorantGaramond-SemiBold";
+  font-style: normal;
+  font-weight: normal;
+  src: url("./assets/fonts/CormorantGaramond-SemiBold.ttf");
+}
+
+@font-face {
+  font-family: "CormorantGaramond-BoldItalic";
+  font-style: normal;
+  font-weight: normal;
+  src: url("./assets/fonts/CormorantGaramond-BoldItalic.ttf");
+}
+
+@font-face {
+  font-family: "CormorantGaramond-Bold";
+  font-style: normal;
+  font-weight: normal;
+  src: url("./assets/fonts/CormorantGaramond-Bold.ttf");
+}
+
+@font-face {
+  font-family: "CormorantGaramond-Light";
+  font-style: normal;
+  font-weight: normal;
+  src: url("./assets/fonts/CormorantGaramond-Light.ttf");
+}
+
+@font-face {
+  font-family: "CormorantGaramond-LightItalic";
+  font-style: normal;
+  font-weight: normal;
+  src: url("./assets/fonts/CormorantGaramond-LightItalic.ttf");
+}
+@font-face {
+  font-family: "CormorantGaramond-Italic";
+  font-style: normal;
+  font-weight: normal;
+  src: url("./assets/fonts/CormorantGaramond-Italic.ttf");
+}
+
+* {
+  outline: none;
+}
+
 body {
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
+  overflow-y: overlay;
+  font-family: "CormorantGaramond-Bold";
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  
+  
+  
 }
 
 code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+  font-family: 'Cormorant Garamond', serif;
 }
+
+::-webkit-scrollbar {
+  width: 6px !important;
+  height: 6px !important;
+}
+
+body ::-webkit-scrollbar-thumb {
+  background-color: hsla(0, 0%, 100%, 0.16);
+}
+
+::-webkit-scrollbar-thumb {
+  background-color: rgba(0, 0, 0, 0.2);
+}
+
+::-webkit-scrollbar-track {
+  background: hsla(0, 0%, 100%, 0.1);
+}
+
+.btn {
+  border-radius: 50px;
+  padding: 14px 0;
+  width: 120px;
+  cursor: pointer;
+  transition: 0.2s;
+  font-family: "CormorantGaramond-SemiBold";
+}
+
+.btn:active {
+  transform: translateY(2px);
+}
+
+.primary-btn {
+  color: var(--white);
+  border: 2px solid linen;
+  font-size: 12px;
+  background-color: #8296ad;
+}
+/* @media only screen and (max-width: 414px) {
+  .primary-btn {
+    font-size: 13px;
+  }
+} */
+
+.primary-btn:hover {
+  color: aliceblue;
+  border: 2px solid #271513;
+  background-color: #687a92;
+}
+
+.highlighted-btn {
+  color: var(--white);
+
+  font-size: 12px;
+  background-color: #77543e;
+}
+
+@media only screen and (max-width: 568px) {
+  .highlighted-btn {
+    z-index: -900;
+  }
+}
+
+.red-border {
+  border: 1px solid var(--error-message) !important;
+}
+
+.fade-in {
+  opacity: 0;
+  transform: translateY(80px);
+  transition: all 0.8s ease;
+}
+
+
